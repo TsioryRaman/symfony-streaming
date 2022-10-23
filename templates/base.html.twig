@@ -14,6 +14,9 @@
         {% endblock %}
     </head>
     <body>
-        {% block body %}{% endblock %}
+        <div class="dark:bg-dark dark:text-white bg-white text-black min-h-screen">
+            {% include "navbar.html.twig" %}
+            {% block body %}{% endblock %}
+        </div>
     </body>
 </html>
