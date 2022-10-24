@@ -19,3 +19,7 @@ This project is builded with symfony 5 for streaming Video/Audio media.
   
   symfony server:start
 ```
+
+# Membre du groupe
+
+### RAFARALAHIZAKASON Toky 
