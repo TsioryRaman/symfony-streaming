@@ -12,6 +12,5 @@ import './styles/app.css';
 import './bootstrap';
 import feather from 'feather-icons'
 
-import './login'
 // Initialize feather icons
 feather.replace()
