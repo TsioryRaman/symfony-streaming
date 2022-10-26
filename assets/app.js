@@ -11,7 +11,5 @@ import './styles/app.css';
 // start the Stimulus application
 import './bootstrap';
 import feather from 'feather-icons'
-
-import './login'
 // Initialize feather icons
 feather.replace()
