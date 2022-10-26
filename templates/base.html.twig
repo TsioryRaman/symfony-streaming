@@ -14,9 +14,10 @@
         {% endblock %}
     </head>
     <body>
-        <div class="dark:bg-dark dark:text-white bg-white text-black min-h-screen">
+        <div class="dark:bg-darker dark:text-white overflow-x-hidden relative pt-20 bg-white text-black min-h-screen">
             {% include "navbar.html.twig" %}
             {% block body %}{% endblock %}
+            {% include "home/footer.html.twig" %}
         </div>
     </body>
 </html>

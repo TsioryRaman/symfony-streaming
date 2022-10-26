@@ -13,6 +13,7 @@ module.exports = {
         "dark-gradient": "rgba(0,0,0,0.9)",
         "dark-light": "rgba(0,0,0,0.6)",
         "dark-gray": "#222121",
+
       },
       strokeWidth: {
         '4': '4px',
