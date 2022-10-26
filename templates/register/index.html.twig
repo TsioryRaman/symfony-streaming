@@ -1,0 +1,85 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Sing in
+{% endblock %}
+        {% block javascripts %}
+        	{{ encore_entry_script_tags('login') }}
+        {% endblock %}
+
+{% block body %}
+	<div class="pt-4 flex flex-col">
+		<div class="center mt-3 pb-5 mb-5 pt-5 mx-auto w-96  bg-dark-gray rounded-md" id="form">
+			<form id="loginform" name="loginform" method="post" class="flex flex-col  w-4/5 mx-auto">
+				<label for="user_login" class="">Username or Email adress</label>
+				<input id="user_login" class="border-neutral-700 bg-dark-gray color-white border w-full rounded p-2 my-4 focus:outline-none focus:bg-neutral-800" type="email" size="20" name="log" value="" autocapitalize="none" autocomplete="username" required="require"/>
+				<label for="password">password</label>
+				<div class="flex flex-row">
+					<input id="password" style="margin-right:-35px" type="password" class="border-neutral-700 w-full bg-dark-gray color-white border rounded p-2 my-4 focus:outline-none focus:bg-neutral-800" size="" name="pwd" value="" autocapitalize="none" autocomplete="username" required="require" minlength="7"/>
+					<span class="mt-6 relative" id="tooglePassword">
+						<p class="block" id="eye">
+							<i data-feather="eye" id=""></i>
+						</p>
+						<p class="hidden" id="eye-off">
+							<i data-feather="eye-off" id=""></i>
+						</p>
+					</span>
+				</div>
+				<div class="flex flex-col">
+					<div class="flex flex-row ">
+						<input type="checkbox" class="mr-2" id="rememberme">
+						<label for="rememberme">Remember me</label>
+					</div>
+					<input type="submit" class="bg-red-600 text-center py-2 rounded-full mt-7 mb-4 hover:bg-red-500" value="login"/>
+					<div class="flex flex-col pt-8">
+						<div class="bg-blue-600 text-center py-2 rounded-md flex flex-wrap hover:bg-blue-500">
+							<div class="ml-2">
+								<i data-feather="facebook"></i>
+							</div>
+							<div class="ml-10">
+								<a href="">
+									<p>Continue with
+										<b>facebook</b>
+									</p>
+								</a>
+							</p>
+						</div>
+					</div>
+					<div class="bg-gray-800 text-center py-2 rounded-md my-3 flex flex-wrap hover:bg-gray-700">
+						<div class="ml-2">
+							<i data-feather="facebook"></i>
+						</div>
+						<div class="ml-10">
+							<a href="">
+								<p>Continue with
+									<b>Google</b>
+								</p>
+							</a>
+						</div>
+					</div>
+					<div class="bg-teal-600 text-center py-2 rounded-md mb-3 flex flex-wrap hover:bg-teal-500">
+						<div class="ml-2">
+							<i data-feather="twitter"></i>
+						</div>
+						<div class="ml-10">
+							<a href="">
+								<p>Continue with
+									<b>Twitter</b>
+								</p>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+	<p class="text-center mt-4 ml-0 pr-20">
+		<a href="">Register
+		</a>|
+		<a href="">lost your password ?</a>
+	</p>
+	<div class="flex flex-row mx-auto ml-30 pr-40 pt-5 mb-4">
+		<i data-feather="arrow-left"></i>
+		<a href="">Go to streamtube</a>
+	</div>
+
+</div>{% endblock %}
