@@ -1,13 +1,29 @@
-
+const eye = document.querySelector("#eye")
+const eyeOff = document.querySelector("#eye-off")
+console.log(eye);
 const tooglePassword = document.querySelector("#tooglePassword");
 const password = document.querySelector("#password");
 console.log(tooglePassword.children)
 tooglePassword.addEventListener("click", function () {
     const type = password.getAttribute("type") === "password" ? "text" : "password";
     password.setAttribute("type", type);
-    const newitems = document.createElement('i');
-    newitems.setAttribute("data-feather", "eye-off");
-    this.replaceChild(newitems, this.firstChild)
+    /* const olditems = this.querySelector(".feather-eye")
+     const newitems = document.createElement('svg');
+     const item = "feather feather-eye";
+     newitems.setAttribute("class", item);
+     this.replaceChild(newitems, olditems)*/
+    if (type === "text") {
+        eye.removeAttribute("class");
+        eye.setAttribute("class", "hidden")
+        eyeOff.removeAttribute("class");
+        eyeOff.setAttribute("class", "block")
+    } else {
+        eyeOff.removeAttribute("class");
+        eyeOff.setAttribute("class", "hidden")
+        eye.removeAttribute("class");
+        eye.setAttribute("class", "block")
+    }
+
 });
 /*
 const eye = document.querySelector(".feather-eye");
