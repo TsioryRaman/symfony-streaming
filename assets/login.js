@@ -1,9 +1,7 @@
 const eye = document.querySelector("#eye")
 const eyeOff = document.querySelector("#eye-off")
-console.log(eye);
 const tooglePassword = document.querySelector("#tooglePassword");
 const password = document.querySelector("#password");
-console.log(tooglePassword.children)
 tooglePassword.addEventListener("click", function () {
     const type = password.getAttribute("type") === "password" ? "text" : "password";
     password.setAttribute("type", type);
