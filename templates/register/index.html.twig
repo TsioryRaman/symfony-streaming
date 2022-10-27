@@ -2,23 +2,19 @@
 
 {% block title %}Sing in
 {% endblock %}
+        {% block javascripts %}
+        	{{ encore_entry_script_tags('login') }}
+        {% endblock %}
 
 {% block body %}
-	<style>
-		#user_login,
-		#password {
-			width: 100%;
-			max-width: 100%;
-		}
-	</style>
 	<div class="pt-4 flex flex-col">
 		<div class="center mt-3 pb-5 mb-5 pt-5 mx-auto w-96  bg-dark-gray rounded-md" id="form">
 			<form id="loginform" name="loginform" method="post" class="flex flex-col  w-4/5 mx-auto">
 				<label for="user_login" class="">Username or Email adress</label>
-				<input id="user_login" class="border-neutral-700 bg-dark-gray color-white border rounded p-2 my-4 focus:outline-none focus:bg-neutral-800" type="email" size="20" name="log" value="" autocapitalize="none" autocomplete="username" required="require"/>
+				<input id="user_login" class="border-neutral-700 bg-dark-gray color-white border w-full rounded p-2 my-4 focus:outline-none focus:bg-neutral-800" type="email" size="20" name="log" value="" autocapitalize="none" autocomplete="username" required="require"/>
 				<label for="password">password</label>
 				<div class="flex flex-row">
-					<input id="password" style="margin-right:-35px" type="password" class="border-neutral-700 bg-dark-gray color-white border rounded p-2 my-4 focus:outline-none focus:bg-neutral-800" size="" name="pwd" value="" autocapitalize="none" autocomplete="username" required="require" minlength="7"/>
+					<input id="password" style="margin-right:-35px" type="password" class="border-neutral-700 w-full bg-dark-gray color-white border rounded p-2 my-4 focus:outline-none focus:bg-neutral-800" size="" name="pwd" value="" autocapitalize="none" autocomplete="username" required="require" minlength="7"/>
 					<span class="mt-6 relative" id="tooglePassword">
 						<p class="block" id="eye">
 							<i data-feather="eye" id=""></i>
