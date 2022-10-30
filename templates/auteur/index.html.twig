@@ -1,0 +1,80 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Streamin | Auteur{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper {margin: 1em auto; max-width: 800px; width: 100%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+<div class="example-wrapper">   
+    <div class="bg-[url('https://streamtube.marstheme.com/wp-content/uploads/2021/08/profile-7-scaled.jpg')] bg-cover bg-center rounded-md py-40 mt-6 "></div>
+    <div class="bg-[url('https://streamtube.marstheme.com/wp-content/uploads/2021/08/avatar-5-150x150.jpg')] bg-center border border-gray-400 rounded-full mx-auto -mt-16 w-36 h-36 flex justify-center items-center"></div>    
+    <h1 class="font-semibold flex justify-center items-center text-2xl mt-6">Emily</h1>    
+</div>
+<nav id="header" class="z-30 bg-transparent mt-10">
+    <div class="w-full flex items-center justify-center">
+       <label for="menu-toggle" class="cursor-pointer md:hidden block">
+          <svg class="fill-current text-blue-600" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+             <title>menu</title>
+             <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+          </svg>
+       </label>
+       <input class="hidden" type="checkbox" id="menu-toggle">
+       
+       <div class="hidden md:flex md:items-center md:w-auto w-full order-9 md:order-1" id="menu">
+          <nav>
+             <ul class="md:flex items-center justify-between text-base text-white md:pt-0">
+                <li>
+                    <a class="inline-block no-underline hover:text-white font-medium text-sm px-4 lg:-ml-2 
+                    py-5 text-white border-b-4 border-red-500 hover:border-red-700 mx-12 sm:mx-6 " href="#">HOME</a>
+                </li>
+                <li>
+                    <a class="inline-block no-underline hover:text-white font-medium text-sm px-4 lg:-ml-2
+                    py-5 text-white border-b-4 border-transparent hover:border-red-700 mx-1 sm:mx-6 " href="#">VIDEOS</a>
+                </li>
+                <li>
+                    <a class="inline-block no-underline hover:text-white font-medium text-sm px-2 lg:-ml-2
+                    py-5 text-white border-b-4 border-transparent hover:border-red-700 mx-1 sm:mx-6 " href="#">COLLECTIONS</a>
+                </li>
+                <li>
+                    <a class="inline-block no-underline hover:text-white font-medium text-sm px-2 lg:-ml-2
+                    py-5 text-white border-b-4 border-transparent hover:border-red-700 mx-1 sm:mx-6 " href="#">LIKED</a>
+                </li>
+                <li>
+                    <a class="inline-block no-underline hover:text-white font-medium text-sm px-2 lg:-ml-2
+                    py-5 text-white border-b-4 border-transparent hover:border-red-700 mx-1 sm:mx-6 " href="#">BLOG</a>
+                </li>
+                <li>
+                    <a class="inline-block no-underline hover:text-white font-medium text-sm px-2 lg:-ml-2
+                    py-5 text-white border-b-4 border-transparent hover:border-red-700 mx-1 sm:mx-6 " href="#">PROFILE</a>
+                </li>
+                <li>
+                    <a class="inline-block no-underline hover:text-white font-medium text-sm px-2 lg:-ml-2
+                    py-5 text-white border-b-4 border-transparent hover:border-red-700 mx-1 sm:mx-6 " href="#">FOLLOWING</a>
+                </li>
+                <li>
+                    <a class="inline-block no-underline hover:text-white font-medium text-sm px-2 lg:-ml-2
+                    py-5 text-white border-b-4 border-transparent hover:border-red-700 mx-1 sm:mx-6 " href="#">FOLLOWERS</a>
+                </li>
+                <li>
+                    <a class="inline-block no-underline hover:text-white font-medium text-sm px-2 lg:-ml-2
+                    py-5 text-white border-b-4 border-transparent hover:border-red-700 mx-1 sm:mx-6 " href="#">FORUM</a>
+                </li>
+          </nav>
+       </div>
+         
+       <div class="order-4 md:order-6 flex flex-wrap items-center justify-end md:mr-4" id="nav-content">
+          <div class="auth flex items-center w-full md:w-full">
+             <button class="bg-transparent text-white text-sm ml-3 md:flex  p-2 rounded-full md:px-6 px-3 py-2  flex items-center medium bg-red-600 border-red-300 mr-4 hover:bg-red-500 hover:text-white">$Donate</button>
+             <button class="rounded-full text-white md:px-6 px-3 py-2  flex items-center medium bg-red-600 p-2 hover:bg-red-500 hover:text-white text-sm ml-3 md:flex ">Follow</button>
+             <div class="rounded-full hover:cursor-pointer ml-2 py-2  flex items-center medium">
+                <i data-feather="mail" class="w-6  h-6 stroke-2"></i>
+            </div>
+          </div>
+       </div>
+    </div>
+ </nav><hr class="border-gray-500 w-full mb-6">
+ 
+{% endblock %}
