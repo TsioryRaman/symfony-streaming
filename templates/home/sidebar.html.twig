@@ -1,0 +1,191 @@
+<aside aria-label="sidebar" id="side-menu" class="w-full sm:w-14 max-h-screen  overflow-y-scroll  fixed scrollbar-hide hidden lg:block ">
+	<div class="overflow-y-auto  bg-gray-50 rounded dark:bg-dark-gray">
+		<nav>
+			<div id="close" class="">
+				<span id="right" class="hidden lg:block px-4 my-3">
+					<i data-feather="arrow-right"></i>
+				</span>
+				<span class="hidden" id="left">
+					<i data-feather="arrow-left"></i>
+				</span>
+			</div>
+			<ul class="space-y-2 text-sm">
+				<li>
+					<button id="" type="button" class=" flex items-center py-4 px-4 w-full text-base font-normal text-gray-900 rounded-lg transition duration-150 group hover:bg-zinc-800 dark:text-white dark:hover:bg-zinc-800" aria-controls="dropdown-example" data-collapse-toggle="dropdown-example">
+						<i data-feather="home" class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-150 group-hover:text-gray-900 dark:text-white dark:group-hover:text-white"></i>
+						<span class="flex-1 ml-5 text-left whitespace-nowrap" sidebar-toggle-item>Home</span>
+						<i data-feather="chevron-down" class="w-6 h-6" sidebar-toogle-item></i>
+					</button>
+					<ul id="dropdown-example" class="hidden py-2 space-y-2 transition duration-1000">
+						{% for i in 0..6 %}
+							<li>
+								<a href="#" class="flex items-center p-2 pl-11 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-zinc-800 dark:text-white dark:hover:bg-zinc-800">home
+									{{i}}</a>
+							</li>
+						{% endfor %}
+					</ul>
+				</li>
+				<li>
+					<button id="" type="button" class=" flex items-center py-4 px-4 w-full text-base font-normal text-gray-900 rounded-lg transition duration-150 group hover:bg-zinc-800 dark:text-white dark:hover:bg-zinc-800" aria-controls="dropdown-video" data-collapse-toggle="dropdown-video">
+						<i data-feather="video" class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-150 group-hover:text-gray-900 dark:text-white dark:group-hover:text-white"></i>
+						<span class="flex-1 ml-5 text-left whitespace-nowrap" sidebar-toggle-item>Videos</span>
+						<i data-feather="chevron-down" class="w-6 h-6" sidebar-toogle-item></i>
+					</button>
+					<ul id="dropdown-video" class="hidden py-2 space-y-2 transition duration-150">
+						<li>
+							<a href="#" class="flex items-center p-2 pl-11 w-full text-base font-normal text-zinc-800 rounded-lg transition duration-75 group hover:bg-zinc-800 dark:text-white dark:hover:bg-zinc-800">Archive</a>
+						</li>
+						<li>
+							<a href="#" class="flex items-center p-2 pl-11 w-full text-base font-normal text-zinc-800 rounded-lg transition duration-75 group hover:bg-zinc-800 dark:text-white dark:hover:bg-zinc-800">gaming
+							</a>
+						</li>
+						<li>
+							<a href="#" class="flex items-center p-2 pl-11 w-full text-base font-normal text-zinc-800 rounded-lg transition duration-75 group hover:bg-zinc-800 dark:text-white dark:hover:bg-zinc-800">Music
+							</a>
+						</li>
+						<li>
+							<a href="#" class="flex items-center p-2 pl-11 w-full text-base font-normal text-zinc-800 rounded-lg transition duration-75 group hover:bg-zinc-800 dark:text-white dark:hover:bg-zinc-800">home
+							</a>
+						</li>
+						<li>
+							<a href="#" class="flex items-center p-2 pl-11 w-full text-base font-normal text-zinc-800 rounded-lg transition duration-75 group hover:bg-zinc-800 dark:text-white dark:hover:bg-zinc-800">home
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																				sports</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+
+					<span class="flex items-center py-4 px-4 w-full text-base font-normal text-gray-900 rounded-lg transition duration-150 group hover:bg-zinc-800 dark:text-white dark:hover:bg-zinc-800">
+						<i data-feather="star" class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-150 group-hover:text-gray-900 dark:text-white dark:group-hover:text-white"></i>
+						<a href="#" class="flex-1 ml-5 text-left whitespace-nowrap">Reviews</a>
+
+					</span>
+				</li>
+				<li>
+
+					<span class="flex items-center py-4 px-4 w-full text-base font-normal text-gray-900 rounded-lg transition duration-150 group hover:bg-zinc-800 dark:text-white dark:hover:bg-zinc-800">
+						<i data-feather="thumbs-up" class="flex-shrink-0 w-6 h-6 text-zinc-800 transition duration-150 group-hover:text-zinc-800  dark:group-hover:text-zinc-800" fill="white"></i>
+						<a href="#" class="flex-1 ml-5 text-left whitespace-nowrap">Liked</a>
+
+					</span>
+				</li>
+				<li>
+
+					<span class="flex items-center py-4 px-4 w-full text-base font-normal text-gray-900 rounded-lg transition duration-150 group hover:bg-zinc-800 dark:text-white dark:hover:bg-zinc-800">
+						<i data-feather="users" class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-150 group-hover:text-gray-900 dark:text-white dark:group-hover:text-white"></i>
+						<a href="#" class="flex-1 ml-5 text-left whitespace-nowrap">Members</a>
+
+					</span>
+				</li>
+				<li>
+
+					<span class="flex items-center py-4 px-4 w-full text-base font-normal text-gray-900 rounded-lg transition duration-150 group hover:bg-zinc-800 dark:text-white dark:hover:bg-zinc-800">
+						<i data-feather="map-pin" class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-150 group-hover:text-gray-900 dark:text-white dark:group-hover:text-white stroke-white stroke-2"></i>
+						<a href="#" class="flex-1 ml-5 text-left whitespace-nowrap">World Map</a>
+
+					</span>
+				</li>
+				<li>
+
+					<span class="flex items-center py-4 px-4 w-full text-base font-normal text-gray-900 rounded-lg transition duration-150 group hover:bg-zinc-800 dark:text-white dark:hover:bg-zinc-800">
+						<i data-feather="star" class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-150 group-hover:text-gray-900 dark:text-white dark:group-hover:text-white"></i>
+						<a href="#" class="flex-1 ml-5 text-left whitespace-nowrap">Blog</a>
+
+					</span>
+				</li>
+				<li>
+					<button i="" type="button" class=" flex items-center py-4 px-4 w-full text-base font-normal text-gray-900 rounded-lg transition duration-150 group hover:bg-zinc-800 dark:text-white dark:hover:bg-zinc-800" aria-controls="dropdown-single" data-collapse-toggle="dropdown-single">
+						<i data-feather="music" class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-150 group-hover:text-gray-900 dark:text-white dark:group-hover:text-white"></i>
+						<span class="flex-1 ml-5 text-left whitespace-nowrap" sidebar-toggle-item>Singles</span>
+						<i data-feather="chevron-down" class="w-6 h-6" sidebar-toogle-item></i>
+					</button>
+					<ul id="dropdown-single" class="hidden py-2 space-y-2 transition duration-150">
+						{% for i in 0..6 %}
+							<li>
+								<a href="#" class="flex items-center p-2 pl-11 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-zinc-800 dark:text-white dark:hover:bg-zinc-800">single
+									{{i}}</a>
+							</li>
+						{% endfor %}
+					</ul>
+				</li>
+				<li>
+					<button id="" type="button" class=" flex items-center py-4 px-4 w-full text-base font-normal text-gray-900 rounded-lg transition duration-150 group hover:bg-zinc-800 dark:text-white dark:hover:bg-zinc-800" aria-controls="dropdown-restriction" data-collapse-toggle="dropdown-restriction">
+						<i data-feather="lock" class="fill-zinc-800 flex-shrink-0 w-6 h-6 text-gray-500 transition duration-150 group-hover:text-gray-900 dark:text-white dark:group-hover:text-white"></i>
+						<span class="flex-1 ml-5 text-left whitespace-nowrap" sidebar-toggle-item>Restriction</span>
+						<i data-feather="chevron-down" class="w-6 h-6" sidebar-toogle-item></i>
+					</button>
+					<ul id="dropdown-restriction" class="hidden py-2 space-y-2 transition duration-150">
+						<li>
+							<a href="#" class="flex items-center p-2 pl-11 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-zinc-800 dark:text-white dark:hover:bg-zinc-800">Paid membership pro</a>
+						</li>
+						<li>
+							<a href="#" class="flex items-center p-2 pl-11 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-zinc-800 dark:text-white dark:hover:bg-zinc-800">Paid video content
+							</a>
+						</li>
+						<li>
+							<a href="#" class="flex items-center p-2 pl-11 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-zinc-800 dark:text-white dark:hover:bg-zinc-800">For logged in user
+							</a>
+						</li>
+						<li>
+							<a href="#" class="flex items-center p-2 pl-11 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-zinc-800 dark:text-white dark:hover:bg-zinc-800">For author role
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<button id="" type="button" class=" flex items-center py-4 px-4 w-full text-base font-normal text-gray-900 rounded-lg transition duration-150 group hover:bg-zinc-800 dark:text-white dark:hover:bg-zinc-800" aria-controls="dropdown-advertising" data-collapse-toggle="dropdown-advertising">
+						<i data-feather="monitor" class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-150 group-hover:text-gray-900 dark:text-white dark:group-hover:text-white"></i>
+						<span class="flex-1 ml-5 text-left whitespace-nowrap" sidebar-toggle-item>advertising</span>
+						<i data-feather="chevron-down" class="w-6 h-6" sidebar-toogle-item></i>
+					</button>
+					<ul id="dropdown-advertising" class="hidden py-2 space-y-2 transition duration-150">
+						{% for i in 0..6 %}
+							<li>
+								<a href="#" class="flex items-center p-2 pl-11 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-zinc-800 dark:text-white dark:hover:bg-zinc-800">advertising
+									{{i}}</a>
+							</li>
+						{% endfor %}
+					</ul>
+				</li>
+				<li>
+
+					<span class="flex items-center py-4 px-4 w-full text-base font-normal text-gray-900 rounded-lg transition duration-150 group hover:bg-zinc-800 dark:text-white dark:hover:bg-zinc-800">
+						<i data-feather="shopping-cart" class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-150 group-hover:text-gray-900 dark:text-white dark:group-hover:text-white"></i>
+						<a href="#" class="flex-1 ml-5 text-left whitespace-nowrap">Shop</a>
+
+					</span>
+				</li>
+				<li>
+
+					<span class="flex items-center py-4 px-4 w-full text-base font-normal text-gray-900 rounded-lg transition duration-150 group hover:bg-zinc-800 dark:text-white dark:hover:bg-zinc-800">
+						<i data-feather="book" class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-150 group-hover:text-gray-900 dark:text-white dark:group-hover:text-white"></i>
+						<a href="#" class="flex-1 ml-5 text-left whitespace-nowrap">Forums</a>
+
+					</span>
+				</li>
+				<span class="flex items-center pl-2.5 mb-5 hidden" id="autor">
+					<span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">AUTHORS</span>
+				</span>
+				<hr class=""></hr>
+
+			{% for i in 0..7 %}
+				<li>
+
+
+					<div class="avatar flex flex-row  my-4 ml-2 w-28">
+						<div class="rounded-full w-9 h-9 overflow-hidden">
+							<img src="https://streamtube.marstheme.com/wp-content/uploads/2021/08/avatar-5-150x150.jpg" class="w-full"></div>
+						<div class="flex flex-col ml-3 ">
+							<span>Emily</span>
+							<span>
+								{{random(7,40)}}
+								videos</span>
+						</div>
+					</div>
+				</li>
+
+			{% endfor %}
+		</span>
+	</li>
+
+	<hr class=""></hr></ul></nav></div></aside>
