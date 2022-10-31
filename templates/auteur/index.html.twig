@@ -4,7 +4,7 @@
 
 {% block body %}
 <style>
-    .example-wrapper {margin: 1em auto; max-width: 800px; width: 100%; font: 18px/1.5 sans-serif; }
+    .example-wrapper {margin: 1em auto; max-width: 1450px;  width: 100%; font: 18px/1.5 sans-serif; }
     .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
 </style>
 
@@ -23,8 +23,7 @@
        </label>
        <input class="hidden" type="checkbox" id="menu-toggle">
        
-       <div class="hidden md:flex md:items-center md:w-auto w-full order-9 md:order-1" id="menu">
-          <nav>
+       <div class="hidden md:flex md:items-center md:w-auto w-full order-9 md:order-1 mr-72" id="menu">
              <ul class="md:flex items-center justify-between text-base text-white md:pt-0">
                 <li>
                     <a class="inline-block no-underline hover:text-white font-medium text-sm px-4 lg:-ml-2 
@@ -62,12 +61,12 @@
                     <a class="inline-block no-underline hover:text-white font-medium text-sm px-2 lg:-ml-2
                     py-5 text-white border-b-4 border-transparent hover:border-red-700 mx-1 sm:mx-6 " href="#">FORUM</a>
                 </li>
-          </nav>
+          
        </div>
          
-       <div class="order-4 md:order-6 flex flex-wrap items-center justify-end md:mr-4" id="nav-content">
+       <div class="order-4 md:order-5 lg:order-7 flex flex-wrap items-center justify-end md:mr-4" id="nav-content">
           <div class="auth flex items-center w-full md:w-full">
-             <button class="bg-transparent text-white text-sm ml-3 md:flex  p-2 rounded-full md:px-6 px-3 py-2  flex items-center medium bg-red-600 border-red-300 mr-4 hover:bg-red-500 hover:text-white">$Donate</button>
+             <button class="bg-transparent text-white text-sm ml-3 md:flex  p-2 rounded-full md:px-6 px-3 py-2  flex items-center medium bg-red-600 border-red-300 hover:bg-red-500 hover:text-white">$Donate</button>
              <button class="rounded-full text-white md:px-6 px-3 py-2  flex items-center medium bg-red-600 p-2 hover:bg-red-500 hover:text-white text-sm ml-3 md:flex ">Follow</button>
              <div class="rounded-full hover:cursor-pointer ml-2 py-2  flex items-center medium">
                 <i data-feather="mail" class="w-6  h-6 stroke-2"></i>
