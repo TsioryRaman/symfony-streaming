@@ -11,7 +11,7 @@ close.addEventListener("click", function () {
     const footer = document.querySelector("#footer")
     if (left.getAttribute("class") === "hidden") {
         navbar.removeAttribute("class")
-        navbar.setAttribute("class", "w-full sm:w-64 max-h-screen  overflow-y-scroll  fixed scrollbar-hide hidden lg:block")
+        navbar.setAttribute("class", "w-full sm:w-64 max-h-screen  overflow-y-scroll  fixed scrollbar-hide hidden lg:block ")
         right.removeAttribute("class")
         right.setAttribute("class", "hidden")
         left.removeAttribute("class")
@@ -25,7 +25,7 @@ close.addEventListener("click", function () {
 
     } else {
 
-        navbar.setAttribute("class", "w-full sm:w-14 max-h-screen  overflow-y-scroll  fixed scrollbar-hide hidden lg:block")
+        navbar.setAttribute("class", "w-full sm:w-14 max-h-screen  overflow-y-scroll  fixed scrollbar-hide hidden lg:block ")
         right.removeAttribute("class")
         right.setAttribute("class", "block ml-3 my-3")
         left.removeAttribute("class")
@@ -46,7 +46,7 @@ close.addEventListener("click", function () {
 menu.addEventListener("click", function () {
     if (navbar.getAttribute("class") === "w-full sm:w-14 max-h-screen  overflow-y-scroll  fixed scrollbar-hide hidden lg:block") {
         navbar.removeAttribute("class")
-        navbar.setAttribute("class", "w-full sm:w-64 max-h-screen  overflow-y-scroll  fixed scrollbar-hide block z-20 ")
+        navbar.setAttribute("class", "w-full sm:w-64 max-h-screen  overflow-y-scroll  fixed scrollbar-hide block z-20")
         index.removeAttribute("class")
         index.setAttribute("class", "ml-4 sm:ml-64")
         right.removeAttribute("class")
