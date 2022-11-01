@@ -2,6 +2,7 @@ const eye = document.querySelector("#eye")
 const eyeOff = document.querySelector("#eye-off")
 const tooglePassword = document.querySelector("#tooglePassword");
 const password = document.querySelector("#password");
+const btn = document.querySelector("#btn")
 tooglePassword.addEventListener("click", function () {
     const type = password.getAttribute("type") === "password" ? "text" : "password";
     password.setAttribute("type", type);
