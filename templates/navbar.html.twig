@@ -3,10 +3,10 @@
 		<div class="flex lg:hidden items-center" id="menu">
 			<i data-feather="menu" class="text-white stroke-4"></i>
 		</div>
-		<div class="flex items-center md:mx-0 mx-auto flex-row">
+		<a href={{path("app_home")}} class="flex items-center md:mx-0 mx-auto flex-row">
 			<i data-feather="play" class="text-red-600"></i>
 			<h1 class="text-2xl font-bold">Streaming</h1>
-		</div>
+		</a>
 		<div class="rounded-l-full border-default border overflow-hidden hidden md:flex sm:hidden xs:hidden bg-select-color rounded-r-full md:mx-auto">
 			<div class="flex relative border-default border-r items-center">
 				<select class="bg-transparent border-0 focus:ring-0 focus:ring-offset-0 lg:px-8 px-6  text-center z-1 appearance-none">
@@ -26,10 +26,10 @@
 			<i data-feather="search" class="w-5 h-5 stroke-4"></i>
 		</div>
 		<div class="flex flex-row">
-			<div class="rounded-full md:px-6 px-3 py-2  flex items-center medium bg-red-600">
+			<a href={{ path("app_login") }} class="rounded-full md:px-6 px-3 py-2  flex items-center medium bg-red-600">
 				<i data-feather="user" class="w-4  h-4 stroke-2"></i>
 				<p class="text-sm ml-3 hidden md:flex">Sign in</p>
-			</div>
+			</a>
 			<div class="rounded-full hover:cursor-pointer ml-2 py-2  flex items-center medium">
 				<i data-feather="moon" class="w-6  h-6 stroke-2"></i>
 			</div>
