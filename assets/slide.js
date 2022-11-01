@@ -4,6 +4,8 @@ const left = document.querySelector("#left")
 const menu = document.querySelector("#menu")
 const navbar = document.querySelector("#side-menu")
 const index = document.querySelector("#index")
+const slidebar = "w-full sm:w-64 max-h-screen  overflow-y-scroll  fixed scrollbar-hide hidden lg:block"
+const slidebarTransform = "w-full sm:w-14 max-h-screen  overflow-y-scroll  fixed scrollbar-hide hidden lg:block"
 close.addEventListener("click", function () {
     const navbar = document.querySelector("#side-menu")
 
@@ -11,7 +13,7 @@ close.addEventListener("click", function () {
     const footer = document.querySelector("#footer")
     if (left.getAttribute("class") === "hidden") {
         navbar.removeAttribute("class")
-        navbar.setAttribute("class", "w-full sm:w-64 max-h-screen  overflow-y-scroll  fixed scrollbar-hide hidden lg:block ")
+        navbar.setAttribute("class", slidebar)
         right.removeAttribute("class")
         right.setAttribute("class", "hidden")
         left.removeAttribute("class")
@@ -25,7 +27,7 @@ close.addEventListener("click", function () {
 
     } else {
 
-        navbar.setAttribute("class", "w-full sm:w-14 max-h-screen  overflow-y-scroll  fixed scrollbar-hide hidden lg:block ")
+        navbar.setAttribute("class", slidebarTransform)
         right.removeAttribute("class")
         right.setAttribute("class", "block ml-3 my-3")
         left.removeAttribute("class")
@@ -44,7 +46,7 @@ close.addEventListener("click", function () {
 
 
 menu.addEventListener("click", function () {
-    if (navbar.getAttribute("class") === "w-full sm:w-14 max-h-screen  overflow-y-scroll  fixed scrollbar-hide hidden lg:block") {
+    if (navbar.getAttribute("class") === slidebarTransform) {
         navbar.removeAttribute("class")
         navbar.setAttribute("class", "w-full sm:w-64 max-h-screen  overflow-y-scroll  fixed scrollbar-hide block z-20")
         index.removeAttribute("class")
@@ -56,7 +58,7 @@ menu.addEventListener("click", function () {
     }
     else {
         navbar.removeAttribute("class")
-        navbar.setAttribute("class", "w-full sm:w-14 max-h-screen  overflow-y-scroll  fixed scrollbar-hide hidden lg:block")
+        navbar.setAttribute("class", slidebarTransform)
         index.removeAttribute("class")
         index.setAttribute("class", "ml-10 sm:ml-10")
     }
