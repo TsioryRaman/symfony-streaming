@@ -9,7 +9,9 @@
 import './styles/app.css';
 
 // start the Stimulus application
+
 import './bootstrap';
 import feather from 'feather-icons'
+import './slide.js';
 // Initialize feather icons
 feather.replace()

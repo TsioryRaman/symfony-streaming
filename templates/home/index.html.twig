@@ -1,141 +1,144 @@
 {% extends 'base.html.twig' %}
 {% block title "Streaming|Acceuil" %}
 {% block body %}
-    <div>
-        {% include "home/header.html.twig" %}
-        <div class="mb-14">
+	<div class=" ml-12" id="index">
+		{% include "home/header.html.twig" %}
 
-            <div class="mt-14">
-                <div class="flex  flex-col">
-                    <div class="w-full overflow-x-hidden pb-4 ml-4 relative before:content-[''] before:absolute before:left-0 before:right-4 before:bottom-0 before:h-px before:bg-gray-600 after:content-[''] after:absolute after:left-0 after:w-12 after:bottom-0 after:h-1 after:bg-red-600">
-                        <h1 class="uppercase tracking-widest font-extrabold text-xl">Top playlists</h1>
-                    </div>
-                    <div class="grid md:grid-cols-2 grid-columns-1 lg:grid-cols-4 lg:grid-rows-1 gap-8 sm:gap-2 lg:gap-8 mx-4 pt-8">
-                        {% for i in 0..3 %}
-                            <div>
-                                <div class="rounded-md relative group cursor-pointer overflow-hidden">
-                                    <div class="absolute top-0 left-0 right-0 bottom-0 duration-300 cursor-pointer hover:bg-dark-transparent">
-                                        <div class="gap-1 h-full flex-row justify-center items-center hidden group-hover:flex">
-                                            <i data-feather="play" class="w-6 h-6 stroke-2"></i>
-                                            <p class="uppercase text-lg font-bold">Play All</p>
-                                        </div>
-                                    </div>
-                                    <div class="absolute right-0 top-0 bottom-0 w-2/6 bg-dark-light rounded-left-md">
-                                        <div class="flex gap-2 items-center justify-center h-full align-center flex-col">
-                                            <p class="text-2xl font-medium">13</p>
-                                            <i data-feather="list" class="stroke-white stroke-4 w-6 h-6"></i>
-                                        </div>
-                                    </div>
-                                    <img class="md:h-52 h-64 w-full" src="https://streamtube.marstheme.com/wp-content/uploads/2021/08/travel-1.jpg" alt="">
-                                </div>
-                                <div class="flex flex-col mt-2">
-                                    <h1 class="text-lg font-bold">Travel playlist</h1>
-                                    <div class="flex mt-1 gap-4 flex-row text-gray-500">
-                                        <div class="flex items-center flex-row gap-1">
-                                            <i data-feather="user" class="w-3 stroke-2"></i>
-                                            <p class="text-sm">Tsiory</p>
-                                        </div>
-                                        <div class="flex items-center flex-row gap-1">
-                                            <div class="w-2 h-2 bg-gray-500 rounded-full"></div>
-                                            <i data-feather="globe" class="w-3 stroke-2"></i>
-                                            <p class="text-sm">Public</p>
-                                        </div>
-                                        <div class="flex items-center flex-row gap-2">
-                                            <div class="w-2 h-2 bg-gray-500 rounded-full"></div>
-                                            <p class="text-sm">13 videos</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        {% endfor %}
-                    </div>
-                </div>
-            </div>
-            <div class="mt-14">
-                <div class="flex  flex-col">
-                    <div class="w-full overflow-x-hidden pb-4 ml-4 relative before:content-[''] before:absolute before:left-0 before:right-4 before:bottom-0 before:h-px before:bg-gray-600 after:content-[''] after:absolute after:left-0 after:w-12 after:bottom-0 after:h-1 after:bg-red-600">
-                        <h1 class="uppercase tracking-widest font-extrabold text-xl">Reviews</h1>
-                    </div>
-                    <div class="grid md:grid-cols-2 grid-columns-1 lg:grid-cols-4 lg:grid-rows-1 gap-8 sm:gap-2 lg:gap-8 mx-4 pt-8">
-                        {% for i in 0..3 %}
-                            <div class="rounded-md overflow-hidden flex flex-col relative">
-                                <div class="cursor-pointer">
-                                    <div class="absolute top-2 right-2">
-                                        <p class="px-2 py-px text-sm bg-dark-transparent">00:15</p>
-                                    </div>
-                                    <img class="md:h-52 h-64 w-full" src="https://streamtube.marstheme.com/wp-content/uploads/2021/08/music-6.jpg" alt="">
-                                </div>
-                                <div class="mt-4 flex flex-row gap-4">
-                                    <div>
-                                        <img src="https://streamtube.marstheme.com/wp-content/uploads/2021/08/avatar-9-150x150.jpg" class="w-10 h-10 rounded-full ring-1 dark:ring-gray-600" alt="">
-                                    </div>
-                                    <div class="flex flex-col">
-                                        <h1 class="text-lg font-bold">Imagine Dragons</h1>
-                                        <div class="flex text-gray-600 gap-2 flex-row mt-3">
-                                            <i data-feather="user" class="stroke-gray-600 w-4 h-4"></i>
-                                            <p class="text-sm">Alden</p>
-                                        </div>
-                                        <div class="flex text-gray-600 gap-6 flex-row mt-2 items-center">
-                                            <div class="flex flex-row items-center gap-2">
-                                                <i data-feather="eye" class="stroke-gray-600 w-4 h-4"></i>
-                                                <p class="text-sm">496 views</p>
-                                            </div>
-                                            <div class="flex flex-row items-center">
-                                                <i data-feather="message-circle" class="stroke-gray-600 w-4 h-4"></i>
-                                                <p class="text-sm">49</p>
-                                            </div>
-                                        </div>
 
-                                    </div>
-                                </div>
-                            </div>
-                        {% endfor %}
-                    </div>
-                </div>
-            </div>
+		<div class="mb-14">
 
-            <div class="mt-14">
-                <div class="flex  flex-col">
-                    <div class="w-full overflow-x-hidden pb-4 ml-4 relative before:content-[''] before:absolute before:left-0 before:right-4 before:bottom-0 before:h-px before:bg-gray-600 after:content-[''] after:absolute after:left-0 after:w-12 after:bottom-0 after:h-1 after:bg-red-600">
-                        <h1 class="uppercase tracking-widest font-extrabold text-xl">Latest video</h1>
-                    </div>
-                    <div class="grid md:grid-cols-2 grid-columns-1 lg:grid-cols-4 lg:grid-rows-1 gap-8 sm:gap-2 lg:gap-8 mx-4 pt-8">
-                        {% for i in 0..7 %}
-                            <div class="rounded-md overflow-hidden flex flex-col relative">
-                                <div class="cursor-pointer">
-                                    <div class="absolute top-2 right-2">
-                                        <p class="px-2 py-px text-sm bg-dark-transparent">00:15</p>
-                                    </div>
-                                    <img class="md:h-52 h-64 w-full" src="https://streamtube.marstheme.com/wp-content/uploads/2021/08/music-6.jpg" alt="">
-                                </div>
-                                <div class="mt-4 flex flex-row gap-4">
-                                    <div>
-                                        <img src="https://streamtube.marstheme.com/wp-content/uploads/2021/08/avatar-9-150x150.jpg" class="w-10 h-10 rounded-full ring-1 dark:ring-gray-600" alt="">
-                                    </div>
-                                    <div class="flex flex-col">
-                                        <h1 class="text-lg font-bold">Imagine Dragons</h1>
-                                        <div class="flex text-gray-600 gap-2 flex-row mt-3">
-                                            <i data-feather="user" class="stroke-gray-600 w-4 h-4"></i>
-                                            <p class="text-sm">Alden</p>
-                                        </div>
-                                        <div class="flex text-gray-600 gap-6 flex-row mt-2 items-center">
-                                            <div class="flex flex-row items-center gap-2">
-                                                <i data-feather="eye" class="stroke-gray-600 w-4 h-4"></i>
-                                                <p class="text-sm">496 views</p>
-                                            </div>
-                                            <div class="flex flex-row items-center">
-                                                <i data-feather="message-circle" class="stroke-gray-600 w-4 h-4"></i>
-                                                <p class="text-sm">49</p>
-                                            </div>
-                                        </div>
+			<div class="mt-14">
+				<div class="flex  flex-col">
+					<div class="w-full overflow-x-hidden pb-4 ml-4 relative before:content-[''] before:absolute before:left-0 before:right-4 before:bottom-0 before:h-px before:bg-gray-600 after:content-[''] after:absolute after:left-0 after:w-12 after:bottom-0 after:h-1 after:bg-red-600">
+						<h1 class="uppercase tracking-widest font-extrabold text-xl">Top playlists</h1>
+					</div>
+					<div class="grid md:grid-cols-2 grid-columns-1 lg:grid-cols-4 lg:grid-rows-1 gap-8 sm:gap-2 lg:gap-8 mx-4 pt-8">
+						{% for i in 0..3 %}
+							<div>
+								<div class="rounded-md relative group cursor-pointer overflow-hidden">
+									<div class="absolute top-0 left-0 right-0 bottom-0 duration-300 cursor-pointer hover:bg-dark-transparent">
+										<div class="gap-1 h-full flex-row justify-center items-center hidden group-hover:flex">
+											<i data-feather="play" class="w-6 h-6 stroke-2"></i>
+											<p class="uppercase text-lg font-bold">Play All</p>
+										</div>
+									</div>
+									<div class="absolute right-0 top-0 bottom-0 w-2/6 bg-dark-light rounded-left-md">
+										<div class="flex gap-2 items-center justify-center h-full align-center flex-col">
+											<p class="text-2xl font-medium">13</p>
+											<i data-feather="list" class="stroke-white stroke-4 w-6 h-6"></i>
+										</div>
+									</div>
+									<img class="md:h-52 h-64 w-full" src="https://streamtube.marstheme.com/wp-content/uploads/2021/08/travel-1.jpg" alt="">
+								</div>
+								<div class="flex flex-col mt-2">
+									<h1 class="text-lg font-bold">Travel playlist</h1>
+									<div class="flex mt-1 gap-4 flex-row text-gray-500">
+										<div class="flex items-center flex-row gap-1">
+											<i data-feather="user" class="w-3 stroke-2"></i>
+											<p class="text-sm">Tsiory</p>
+										</div>
+										<div class="flex items-center flex-row gap-1">
+											<div class="w-2 h-2 bg-gray-500 rounded-full"></div>
+											<i data-feather="globe" class="w-3 stroke-2"></i>
+											<p class="text-sm">Public</p>
+										</div>
+										<div class="flex items-center flex-row gap-2">
+											<div class="w-2 h-2 bg-gray-500 rounded-full"></div>
+											<p class="text-sm">13 videos</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						{% endfor %}
+					</div>
+				</div>
+			</div>
+			<div class="mt-14">
+				<div class="flex  flex-col">
+					<div class="w-full overflow-x-hidden pb-4 ml-4 relative before:content-[''] before:absolute before:left-0 before:right-4 before:bottom-0 before:h-px before:bg-gray-600 after:content-[''] after:absolute after:left-0 after:w-12 after:bottom-0 after:h-1 after:bg-red-600">
+						<h1 class="uppercase tracking-widest font-extrabold text-xl">Reviews</h1>
+					</div>
+					<div class="grid md:grid-cols-2 grid-columns-1 lg:grid-cols-4 lg:grid-rows-1 gap-8 sm:gap-2 lg:gap-8 mx-4 pt-8">
+						{% for i in 0..3 %}
+							<div class="rounded-md overflow-hidden flex flex-col relative">
+								<div class="cursor-pointer">
+									<div class="absolute top-2 right-2">
+										<p class="px-2 py-px text-sm bg-dark-transparent">00:15</p>
+									</div>
+									<img class="md:h-52 h-64 w-full" src="https://streamtube.marstheme.com/wp-content/uploads/2021/08/music-6.jpg" alt="">
+								</div>
+								<div class="mt-4 flex flex-row gap-4">
+									<div>
+										<img src="https://streamtube.marstheme.com/wp-content/uploads/2021/08/avatar-9-150x150.jpg" class="w-10 h-10 rounded-full ring-1 dark:ring-gray-600" alt="">
+									</div>
+									<div class="flex flex-col">
+										<h1 class="text-lg font-bold">Imagine Dragons</h1>
+										<div class="flex text-gray-600 gap-2 flex-row mt-3">
+											<i data-feather="user" class="stroke-gray-600 w-4 h-4"></i>
+											<p class="text-sm">Alden</p>
+										</div>
+										<div class="flex text-gray-600 gap-6 flex-row mt-2 items-center">
+											<div class="flex flex-row items-center gap-2">
+												<i data-feather="eye" class="stroke-gray-600 w-4 h-4"></i>
+												<p class="text-sm">496 views</p>
+											</div>
+											<div class="flex flex-row items-center">
+												<i data-feather="message-circle" class="stroke-gray-600 w-4 h-4"></i>
+												<p class="text-sm">49</p>
+											</div>
+										</div>
 
-                                    </div>
-                                </div>
-                            </div>
-                        {% endfor %}
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+									</div>
+								</div>
+							</div>
+						{% endfor %}
+					</div>
+				</div>
+			</div>
+
+			<div class="mt-14">
+				<div class="flex  flex-col">
+					<div class="w-full overflow-x-hidden pb-4 ml-4 relative before:content-[''] before:absolute before:left-0 before:right-4 before:bottom-0 before:h-px before:bg-gray-600 after:content-[''] after:absolute after:left-0 after:w-12 after:bottom-0 after:h-1 after:bg-red-600">
+						<h1 class="uppercase tracking-widest font-extrabold text-xl">Latest video</h1>
+					</div>
+					<div class="grid md:grid-cols-2 grid-columns-1 lg:grid-cols-4 lg:grid-rows-1 gap-8 sm:gap-2 lg:gap-8 mx-4 pt-8">
+						{% for i in 0..7 %}
+							<div class="rounded-md overflow-hidden flex flex-col relative">
+								<div class="cursor-pointer">
+									<div class="absolute top-2 right-2">
+										<p class="px-2 py-px text-sm bg-dark-transparent">00:15</p>
+									</div>
+									<img class="md:h-52 h-64 w-full" src="https://streamtube.marstheme.com/wp-content/uploads/2021/08/music-6.jpg" alt="">
+								</div>
+								<div class="mt-4 flex flex-row gap-4">
+									<div>
+										<img src="https://streamtube.marstheme.com/wp-content/uploads/2021/08/avatar-9-150x150.jpg" class="w-10 h-10 rounded-full ring-1 dark:ring-gray-600" alt="">
+									</div>
+									<div class="flex flex-col">
+										<h1 class="text-lg font-bold">Imagine Dragons</h1>
+										<div class="flex text-gray-600 gap-2 flex-row mt-3">
+											<i data-feather="user" class="stroke-gray-600 w-4 h-4"></i>
+											<p class="text-sm">Alden</p>
+										</div>
+										<div class="flex text-gray-600 gap-6 flex-row mt-2 items-center">
+											<div class="flex flex-row items-center gap-2">
+												<i data-feather="eye" class="stroke-gray-600 w-4 h-4"></i>
+												<p class="text-sm">496 views</p>
+											</div>
+											<div class="flex flex-row items-center">
+												<i data-feather="message-circle" class="stroke-gray-600 w-4 h-4"></i>
+												<p class="text-sm">49</p>
+											</div>
+										</div>
+
+									</div>
+								</div>
+							</div>
+						{% endfor %}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
 {% endblock %}
