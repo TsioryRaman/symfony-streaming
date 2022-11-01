@@ -1,0 +1,123 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Streamin | Auteur{% endblock %}
+
+{% block body %}
+
+<div class="text-lg font-sans max-w-screen-xl w-full mx-auto ">   
+    <div class="bg-[url('https://streamtube.marstheme.com/wp-content/uploads/2021/08/profile-7-scaled.jpg')] bg-cover bg-center rounded-md py-40 mt-6"></div>
+    <div class="bg-[url('https://streamtube.marstheme.com/wp-content/uploads/2021/08/avatar-5-150x150.jpg')] bg-center border border-gray-400 rounded-full mx-auto -mt-16 w-36 h-36 flex justify-center items-center"></div>    
+    <h1 class="font-semibold flex justify-center items-center text-2xl mt-6">Emily</h1>    
+
+    <nav id="header" class="z-30 bg-transparent mt-10">
+        <div class="w-full flex items-center justify-center">
+            <label for="menu-toggle" class="cursor-pointer md:hidden block">
+                <svg class="fill-current text-blue-600" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                    <title>menu</title>
+                    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                </svg>
+            </label>
+            <input class="hidden" type="checkbox" id="menu-toggle">
+            
+            <div class="hidden md:flex md:items-center md:w-auto w-full order-9 md:order-1 mr-36" id="menu">
+                    <ul class="md:flex items-center justify-between text-base text-white md:pt-0">
+                        <li>
+                            <a class="inline-block no-underline hover:text-white font-medium text-sm px-4 lg:-ml-2 
+                            py-5 text-white border-b-4 border-red-500 hover:border-red-700 mx-1 sm:mx-6 uppercase " href="#">Home</a>
+                        </li>
+                        <li>
+                            <a class="inline-block no-underline hover:text-white font-medium text-sm px-4 lg:-ml-2
+                            py-5 text-white border-b-4 border-transparent hover:border-red-700 mx-1 sm:mx-6 uppercase " href="#">Videos</a>
+                        </li>
+                        <li>
+                            <a class="inline-block no-underline hover:text-white font-medium text-sm px-2 lg:-ml-2
+                            py-5 text-white border-b-4 border-transparent hover:border-red-700 mx-1 sm:mx-6 uppercase " href="#">Collections</a>
+                        </li>
+                        <li>
+                            <a class="inline-block no-underline hover:text-white font-medium text-sm px-2 lg:-ml-2
+                            py-5 text-white border-b-4 border-transparent hover:border-red-700 mx-1 sm:mx-6 uppercase" href="#">liked</a>
+                        </li>
+                        <li>
+                            <a class="inline-block no-underline hover:text-white font-medium text-sm px-2 lg:-ml-2
+                            py-5 text-white border-b-4 border-transparent hover:border-red-700 mx-1 sm:mx-6 uppercase" href="#">blog</a>
+                        </li>
+                        <li>
+                            <a class="inline-block no-underline hover:text-white font-medium text-sm px-2 lg:-ml-2
+                            py-5 text-white border-b-4 border-transparent hover:border-red-700 mx-1 sm:mx-6 uppercase" href="#">profile</a>
+                        </li>
+                        <li>
+                            <a class="inline-block no-underline hover:text-white font-medium text-sm px-2 lg:-ml-2
+                            py-5 text-white border-b-4 border-transparent hover:border-red-700 mx-1 sm:mx-6 uppercase" href="#">following</a>
+                        </li>
+                        <li>
+                            <a class="inline-block no-underline hover:text-white font-medium text-sm px-2 lg:-ml-2
+                            py-5 text-white border-b-4 border-transparent hover:border-red-700 mx-1 sm:mx-6 uppercase" href="#">followers</a>
+                        </li>
+                        <li>
+                            <a class="inline-block no-underline hover:text-white font-medium text-sm px-2 lg:-ml-2
+                            py-5 text-white border-b-4 border-transparent hover:border-red-700 mx-1 sm:mx-6 uppercase" href="#">Forum</a>
+                        </li>
+                    </ul>
+            </div>
+                
+            <div class="order-4 md:order-5 lg:order-7 flex flex-wrap items-center justify-end md:mr-4" id="nav-content">
+                <div class="auth flex items-center w-full md:w-full">
+                    <button class="bg-transparent text-white text-sm ml-3 md:flex  p-2 rounded-full md:px-6 px-3 py-2  flex items-center medium bg-red-600 border-red-300 hover:bg-red-500 hover:text-white">$Donate</button>
+                    <button class="rounded-full text-white md:px-6 px-3 py-2  flex items-center medium bg-red-600 p-2 hover:bg-red-500 hover:text-white text-sm ml-3 md:flex ">Follow</button>
+                    <div class="rounded-full hover:cursor-pointer ml-2 py-2  flex items-center medium">
+                        <i data-feather="mail" class="w-6  h-6 stroke-2"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+<hr class="border-gray-500 w-full">
+
+<div class="text-lg font-sans max-w-screen-xl w-full mx-auto b">
+    <div class="">
+        <div class="mt-6">
+            <div class="flex  flex-col">
+                <div class="w-full overflow-x-hidden pb-4 ml-4 relative before:content-[''] before:absolute before:left-0 before:right-4 before:bottom-0 before:h-px before:bg-gray-600 after:content-[''] after:absolute after:left-0 after:w-12 after:bottom-0 after:h-1 after:bg-red-600">
+                    <h1 class="uppercase tracking-widest font-extrabold text-xl">videos</h1>
+                </div>
+                <div class="grid md:grid-cols-2 grid-columns-1 lg:grid-cols-4 lg:grid-rows-1 gap-8 sm:gap-2 lg:gap-8 mx-4 pt-8">
+                    {% for i in 0..7 %}
+                        <div class="rounded-md overflow-hidden flex flex-col relative">
+                            <div class="cursor-pointer">
+                                <div class="absolute top-2 right-2">
+                                    <p class="px-2 py-px text-sm bg-dark-transparent">00:15</p>
+                                </div>
+                                <img class="md:h-52 h-64 w-full" src="https://streamtube.marstheme.com/wp-content/uploads/2021/08/music-6.jpg" alt="">
+                            </div>
+                            <div class="mt-4 flex flex-row gap-4">
+                                <div>
+                                    <img src="https://streamtube.marstheme.com/wp-content/uploads/2021/08/avatar-9-150x150.jpg" class="w-10 h-10 rounded-full ring-1 dark:ring-gray-600" alt="">
+                                </div>
+                                <div class="flex flex-col">
+                                    <h1 class="text-lg font-bold">Imagine Dragons</h1>
+                                    <div class="flex text-gray-600 gap-2 flex-row mt-3">
+                                        <i data-feather="user" class="stroke-gray-600 w-4 h-4"></i>
+                                        <p class="text-sm">Alden</p>
+                                    </div>
+                                    <div class="flex text-gray-600 gap-6 flex-row mt-2 items-center">
+                                        <div class="flex flex-row items-center gap-2">
+                                            <i data-feather="eye" class="stroke-gray-600 w-4 h-4"></i>
+                                            <p class="text-sm">496 views</p>
+                                        </div>
+                                        <div class="flex flex-row items-center">
+                                            <i data-feather="message-circle" class="stroke-gray-600 w-4 h-4"></i>
+                                            <p class="text-sm">49</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
