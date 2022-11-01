@@ -23,3 +23,7 @@ This project is builded with symfony 5 for streaming Video/Audio media.
 # Membre du groupe
 
 ### RAFARALAHIZAKASON Toky 
+
+### Sitraka
+
+### Tsiory
