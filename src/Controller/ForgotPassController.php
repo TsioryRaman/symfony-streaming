@@ -6,11 +6,13 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-class RegisterController extends AbstractController
+class ForgotPassController extends AbstractController
 {
-    #[Route('/register', name: 'app_register')]
+    #[Route('/forgot/pass', name: 'app_forgot_pass')]
     public function index(): Response
     {
-        return $this->render('register/index.html.twig');
+        return $this->render('forgot_pass/index.html.twig', [
+            'controller_name' => 'ForgotPassController',
+        ]);
     }
 }

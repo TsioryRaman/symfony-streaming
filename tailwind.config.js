@@ -20,12 +20,14 @@ module.exports = {
         '4': '4px',
       },
       height: {
-        "450":"450px"
+        "450": "450px"
       }
     },
     container: {
       center: true,
     }
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar-hide')
+  ],
 }
