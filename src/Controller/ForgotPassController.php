@@ -8,7 +8,7 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class ForgotPassController extends AbstractController
 {
-    #[Route('/forgot/pass', name: 'app_forgot_pass')]
+    #[Route('/forgout-password', name: 'app_forgot_pass')]
     public function index(): Response
     {
         return $this->render('forgot_pass/index.html.twig', [
