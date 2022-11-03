@@ -15,7 +15,7 @@ This project is builded with symfony 5 for streaming Video/Audio media.
 
 ### Run developement server
 ```bash
-  yarn encore dev --watch
+  yarn watch
   
   symfony server:start
 ```
