@@ -1,0 +1,44 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Streaming | Forgot{% endblock %}
+
+{% block body %}
+
+<div class="text-lg font-sans max-w-screen-sm w-full mx-auto">
+    <div class="pt-4 flex flex-col">
+        <div class="center mt-3 pb-5 mb-5 pt-5 mx-auto w-96 border-l-4 border-blue-500 bg-dark-gray">
+            <p class="mx-4 text-sm">Please enter your username or email address. You will 
+                <span class="text-sm">receive an email message with instructions on how to reset your password</span>
+            </p>
+        </div>
+    </div>
+    <div class="flex flex-col mt-1">
+        <div class="center pb-5 mb-5 pt-5 mx-auto w-96 border-l-4 border-red-500 bg-dark-gray">
+            <p class="mx-4 text-sm">Error: Please enter a username or email address.</p>
+        </div>
+    </div>
+    <div class="flex flex-col mt-0">
+		<div class="center pb-5 mb-5 pt-5 mx-auto w-96  bg-dark-gray rounded-md" id="form">
+			<form id="loginform" name="loginform" method="post" class="flex flex-col mx-6">
+				<label for="user_login" class="text-sm">Username or Email adress</label>
+				<input id="user_login" class="border-neutral-700 bg-dark-gray color-white border w-full rounded p-3 my-4 focus:outline-none focus:bg-neutral-800" type="email" size="20" name="log" value="" autocapitalize="none" autocomplete="username" required="require"/>
+                
+                <div class="flex justify-center items-center mt-4 mx-auto "> 
+                    <button type="submit" class="border-5 bg-red-600 rounded-3xl text-white py-2 px-24 text-sm">Get New Password</button>
+                </div>
+		    </form>
+        </div>
+	</div>
+    <div class="flex flex-col mt-1">
+        <div class="center mx-auto w-96 bg-transparent text-sm">
+            <a href={{ path("app_login") }} class="mx-1">log In</a>|
+            <a href={{ path("app_register") }} class="mx-0">Register</a>
+        </div>
+        <div class="flex flex-row mx-auto ml-30 pr-40 pt-5 mb-4 text-sm">
+            <i data-feather="arrow-left"></i>
+            <a href="">Go to streamtube</a>
+        </div>
+    </div>
+
+</div>
+{% endblock %}
