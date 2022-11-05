@@ -1,0 +1,33 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}forum  controller
+{% endblock %}
+
+{% block body %}
+
+	<div class="px-0 sm:m-12 sm:px-10 pt-10 m-12">
+
+		<h1 class="text-2xl font-bold">Forums</h1>
+		<div class=" py-3">
+			<a href="#" class="text-sm">Home</a>
+			>
+			<a href="" class="text-sm text-zinc-700">Forums</a>
+		</div>
+		<div class="flex flex row text-lg">
+			<p class="p-3   hover:bg-zinc-700  border-red-600 font-bold transition bg-zinc-700 duration-200 border-t-4 border-darker hover:border-red-600">
+				<a href={{ path("app_forum") }}>Forums</a>
+			</p>
+			<p class="p-3  hover:bg-zinc-700 font-bold transition duration-200 border-t-4 border-darker hover:border-red-600">
+				<a href={{ path("app_popular_topic") }}>
+					Most populary topics</a>
+			</p>
+			<p class="p-3 hover:bg-zinc-700 font-bold transition duration-200 border-t-4 border-darker hover:border-red-600">
+				<a href={{ path("app_topic_no_replies") }}>Topics with no replies</a>
+			</p>
+
+		</div>
+		<hr class=""></hr>
+	{% include "forum_list/index.html.twig" %}
+
+
+{% endblock %}
