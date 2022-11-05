@@ -1,0 +1,109 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Topic no replies
+{% endblock %}
+
+{% block body %}
+	<div class="m-12 px-10 pt-10 mb-5">
+
+		<h1 class="text-2xl font-bold">Forums</h1>
+		<div class=" py-3">
+			<a href="#" class="text-sm">Home</a>
+			>
+			<a href="" class="text-sm text-zinc-700">Forums</a>
+		</div>
+		<div class="flex flex row text-lg">
+			<p class="p-3 hover:bg-zinc-700 font-bold transition duration-200 border-t-4 border-darker hover:border-red-600">
+				<a href={{ path ("app_forum")}}>Forums</a>
+			</p>
+			<p class="p-3 hover:bg-zinc-700 font-bold transition duration-200 border-t-4 border-darker hover:border-red-600">
+				<a href={{ path("app_popular_topic") }}>
+					Most populary topics</a>
+			</p>
+			<p class="p-3 border-red-600 hover:bg-zinc-700  bg-zinc-700 font-bold transition duration-200 border-t-4 border-darker hover:border-red-600">
+				<a href="">Topics with no replies</a>
+			</p>
+
+		</div>
+		<hr class="mb-5"></hr>
+
+	<span class="text-zinc-700">Viewing 2 topics - 1 through 2 (of 2 total)</span>
+	<div class="flex justify-between bg-dark-gray my-5 p-3 border-2 border-zinc-800">
+		<p class="p-3 font-bold">TOPIC</p>
+		<div class="flex justify-center">
+
+
+			<p class="py-3 font-bold">POST</p>
+
+			<p class="py-3 px-28 font-bold">LAST POST</p>
+		</div>
+	</div>
+	<div class="flex justify-between bg-dark-gray my-5 p-5 border-2 border-zinc-800">
+		<div class="flex flex-row">
+			<span class="w-12 h-12 rounded-full overflow-hidden"><img src="https://streamtube.marstheme.com/wp-content/uploads/2021/08/avatar-1-150x150.jpg"></span>
+			<div class="flex flex-col ml-5">
+				<span class="text-lg font-bold">hNulla vel metus sit amet leo mollis eleifend.</span>
+				<span class="text-md text-zinc-300 mt-3">In ullamcorper lorem a eros faucibus, eget vestibulum ligula dapibus. In sed aliquet eros. Sed vest…</span>
+				<span class="text-md  mt-3 font-bold">Started by:
+					<a href="#">John Does</a>
+					in:<a href="#">
+						Gaming</a>
+				</span>
+
+			</div>
+		</div>
+		<div class="flex justify-center">
+			<span class="text-md font-bold pr-24">
+				{{ random(1,6)}}
+			</span>
+			<p class="text-sm text-zinc-300 pl-5 pr-14">3 mounths,4 weeks ago</p>
+
+		</div>
+	</div>
+	<div class="flex justify-between bg-dark-gray my-5 p-5 border-2 border-zinc-800">
+		<div class="flex flex-row">
+			<span class="w-12 h-12 rounded-full overflow-hidden"><img src="https://streamtube.marstheme.com/wp-content/uploads/2021/08/avatar-5-150x150.jpg"></span>
+			<div class="flex flex-col ml-5">
+				<span class="text-lg font-bold">Sed blandit nunc a tellus bibendum faucibus. Nullam magna libero</span>
+				<span class="text-md text-zinc-300 mt-3">In ullamcorper lorem a eros faucibus, eget vestibulum ligula dapibus. In sed aliquet eros. Sed vest…</span>
+				<span class="text-md  mt-3 font-bold">Started by:
+					<a href="#">John Does</a>
+					in:<a href="#">
+						Gaming</a>
+				</span>
+
+			</div>
+		</div>
+		<div class="flex justify-center">
+			<span class="text-md font-bold pr-24">
+				{{ random(1,6)}}
+			</span>
+			<p class="text-sm text-zinc-300 pl-5 pr-14">3 mounths,4 weeks ago</p>
+
+		</div>
+	</div>
+	<div class="flex justify-between bg-dark-gray my-5 p-5 border-2 border-zinc-800">
+		<div class="flex flex-row">
+			<span class="w-12 h-12 rounded-full overflow-hidden"><img src="https://streamtube.marstheme.com/wp-content/uploads/2021/08/avatar-2-150x150.jpg"></span>
+			<div class="flex flex-col ml-5">
+				<span class="text-lg font-bold">SEtiam quis vulputate ante. Etiam dapibus pretium loremo</span>
+				<span class="text-md text-zinc-300 mt-3">In ullamcorper lorem a eros faucibus, eget vestibulum ligula dapibus. In sed aliquet eros. Sed vest…</span>
+				<span class="text-md  mt-3 font-bold">Started by:
+					<a href="#">Emily</a>
+					in:<a href="#">
+						Gaming</a>
+				</span>
+
+			</div>
+		</div>
+		<div class="flex justify-center">
+			<span class="text-md font-bold pr-24">
+				{{ random(1,6)}}
+			</span>
+			<p class="text-sm text-zinc-300 pl-5 pr-14">3 mounths,4 weeks ago</p>
+
+		</div>
+	</div>
+
+
+</div>{% endblock %}
