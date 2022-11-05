@@ -33,9 +33,9 @@
 					</button>
 					<ul id="dropdown-video" class="hidden py-2 space-y-2 transition duration-150">
 						{% for i in ["Home","gaming","musique","home","home"] %}
-						<li>
-							<a href="#" class="flex items-center p-2 pl-11 w-full text-base font-normal rounded-lg transition duration-75 group hover:bg-zinc-800 text-white ">{i}</a>
-						</li>
+							<li>
+								<a href="#" class="flex items-center p-2 pl-11 w-full text-base font-normal rounded-lg transition duration-75 group hover:bg-zinc-800 text-white ">{i}</a>
+							</li>
 						{% endfor %}
 					</ul>
 				</li>
@@ -145,7 +145,7 @@
 
 					<span class="flex items-center py-4 px-4 w-full text-base font-normal  rounded-lg transition duration-150 group hover:bg-zinc-800 text-white ">
 						<i data-feather="book" class="flex-shrink-0 w-6 h-6  transition duration-150 group-hover: text-white group-hover:text-white"></i>
-						<a href="#" class="flex-1 ml-5 text-left whitespace-nowrap">Forums</a>
+						<a href={{path("app_forum")}} class="flex-1 ml-5 text-left whitespace-nowrap">Forums</a>
 
 					</span>
 				</li>
