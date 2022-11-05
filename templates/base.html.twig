@@ -19,14 +19,14 @@
 		{% block javascripts %}{% endblock %}
 	</head>
 	<body>
-		<div class="dark:bg-darker dark:text-white overflow-x-hidden relative pt-20 bg-white text-black min-h-screen">
 			{% include "navbar.html.twig" %}
 
+		<div class="bg-darker text-white overflow-x-hidden relative pt-20 min-h-screen">
 			{% include "home/sidebar.html.twig" %}
 			{% block body %}{% endblock %}
 
-
 			{% include "home/footer.html.twig" %}
 		</div>
+
 	</body>
 </html>
