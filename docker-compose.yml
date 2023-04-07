@@ -1,21 +1,56 @@
-version: '3'
-
+version: "3.3"
 services:
-###> doctrine/doctrine-bundle ###
-  database:
-    image: postgres:${POSTGRES_VERSION:-14}-alpine
-    environment:
-      POSTGRES_DB: ${POSTGRES_DB:-app}
-      # You should definitely change the password in production
-      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-!ChangeMe!}
-      POSTGRES_USER: ${POSTGRES_USER:-app}
-    volumes:
-      - db-data:/var/lib/postgresql/data:rw
-      # You may use a bind-mounted host directory instead, so that it is harder to accidentally remove the volume and lose all your data!
-      # - ./docker/db/data:/var/lib/postgresql/data:rw
-###< doctrine/doctrine-bundle ###
+    nginx: 
+        image: nginx
+        volumes:
+            - ./:/var/www/symfony 
+            - ./docker/nginx/conf.d:/etc/nginx/conf.d
+        ports:
+#            - 80:80
+             - 8082:80
+        depends_on: 
+            - php-fpm
+    php-fpm:
+        build: ./docker/php-fpm
+        depends_on:
+            -  mysql
+        volumes: 
+            - ./:/var/www/symfony
+            - ./docker/php-fpm/php.ini:/usr/local/etc/php/php.ini
+
+
+    caddy-mercure:
+        image: dunglas/mercure
+        restart: unless-stopped
+        environment:
+            SERVER_NAME: ':80'
+            MERCURE_PUBLISHER_JWT_KEY: '!ChangeMe!'
+            MERCURE_SUBSCRIBER_JWT_KEY: '!ChangeMe!'
+            MERCURE_EXTRA_DIRECTIVES: |
+                cors_origins http://192.168.42.52:8080
+                anonymous
+        command: /usr/bin/caddy run -config /etc/caddy/Caddyfile.dev
+        ports:
+          - "8001:80"
+        volumes:
+            - caddy_data:/data
+            - caddy_config:/config
+
+    mysql:
+        image: mariadb:10.1
+        environment:
+            MYSQL_ROOT_PASSWORD: streaming
+            MYSQL_DATABASE: streaming
+            MYSQL_USER: streaming
+            MYSQL_PASSWORD: streaming
+        ports:
+            - "3308:3306"
+
+    mailhog:
+        image: mailhog/mailhog
+        ports: 
+            - 8025:8025
 
 volumes:
-###> doctrine/doctrine-bundle ###
-  db-data:
-###< doctrine/doctrine-bundle ###
+    caddy_data:
+    caddy_config:
