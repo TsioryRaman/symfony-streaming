@@ -1,18 +1,18 @@
 <?php
 
-namespace App\Controller;
+namespace App\Http\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-class AuteurController extends AbstractController
+class ForumController extends AbstractController
 {
-    #[Route('/auteur', name: 'app_auteur')]
+    #[Route('/forum', name: 'app_forum')]
     public function index(): Response
     {
-        return $this->render('auteur/index.html.twig', [
-            'controller_name' => 'AuteurController',
+        return $this->render('forum/index.html.twig', [
+            'controller_name' => 'ForumController',
         ]);
     }
 }
